@@ -1,10 +1,10 @@
 ##Min-Max-Algo:
 
-*While you play any game with perfect information every chance a player gets their are several moves the player can play, so consider chess, and you are white, imagine a number line the higher the value the more the favour is on white side and lesser, the black side gets favoured so every move white plays it tries to maximize its value and black tries to minimise inorder to favour its win
+* While you play any game with perfect information every chance a player gets their are several moves the player can play, so consider chess, and you are white, imagine a number line the higher the value the more the favour is on white side and lesser, the black side gets favoured so every move white plays it tries to maximize its value and black tries to minimise inorder to favour its win
 
-*So all in all 0, 2, 4, .....(2n) even moves try to maximize and odd moves minimize
+* So all in all 0, 2, 4, .....(2n) even moves try to maximize and odd moves minimize
 
-*Now a state can have several moves, so the big picture of a game can be visualised as a tree, let's call the number of valid moves in a state as branching factor, in chess average branching factor is 14, in tic tac toe it's 9 at first then decreases one per move, and with every move the depth increases, the final states are leaf nodes of the tree
+* Now a state can have several moves, so the big picture of a game can be visualised as a tree, let's call the number of valid moves in a state as branching factor, in chess average branching factor is 14, in tic tac toe it's 9 at first then decreases one per move, and with every move the depth increases, the final states are leaf nodes of the tree
 
 now we can backtrack through every possible state and then find the best possible moves
 
