@@ -16,29 +16,29 @@ let's take a simple example of game tree with branching factor 2, with nodes whe
 
 here's a pseudo code for baxktracking:
 
-function minimax(position, depth, maximizingPlayer):
+	function minimax(position, depth, maximizingPlayer):
 
-	if depth == 0 or game over in position
-		return static evaluation of position
+		if depth == 0 or game over in position
+			return static evaluation of position
  
-	if maximizingPlayer
-		maxEval = -infinity
-		for each child of position
-			eval = minimax(child, depth - 1, false)
-			maxEval = max(maxEval, eval)
-		return maxEval
+		if maximizingPlayer
+			maxEval = -infinity
+			for each child of position
+				eval = minimax(child, depth - 1, false)
+				maxEval = max(maxEval, eval)
+			return maxEval
  
-	else
-		minEval = +infinity
-		for each child of position
-			eval = minimax(child, depth - 1, true)
-			minEval = min(minEval, eval)
-		return minEval
+		else
+			minEval = +infinity
+			for each child of position
+				eval = minimax(child, depth - 1, true)
+				minEval = min(minEval, eval)
+			return minEval
  
  
 // initial call
 
-    minimax(currentPosition, 3, true)
+    	minimax(currentPosition, 3, true)
 
 
 
@@ -46,30 +46,30 @@ Now it's all fun and games until you get a game like chess, where the avg branch
 
 here's a pseudo code for minimax with alpha beta pruning
 
-function minimax(position, depth, alpha, beta, maximizingPlayer):
+	function minimax(position, depth, alpha, beta, maximizingPlayer):
 
-	if depth == 0 or game over in position
-		return static evaluation of position
+		if depth == 0 or game over in position
+			return static evaluation of position
 
-	if maximizingPlayer
-		maxEval = -infinity
-		for each child of position
-			eval = minimax(child, depth - 1, alpha, beta false)
-			maxEval = max(maxEval, eval)
-			alpha = max(alpha, eval)
-			if beta <= alpha
-				break
-		return maxEval
+		if maximizingPlayer
+			maxEval = -infinity
+			for each child of position
+				eval = minimax(child, depth - 1, alpha, beta false)
+				maxEval = max(maxEval, eval)
+				alpha = max(alpha, eval)
+				if beta <= alpha
+					break
+			return maxEval
 
-	else
-		minEval = +infinity
-		for each child of position
-			eval = minimax(child, depth - 1, alpha, beta true)
-			minEval = min(minEval, eval)
-			beta = min(beta, eval)
-			if beta <= alpha
-				break
-		return minEval
+		else
+			minEval = +infinity
+			for each child of position
+				eval = minimax(child, depth - 1, alpha, beta true)
+				minEval = min(minEval, eval)
+				beta = min(beta, eval)
+				if beta <= alpha
+					break
+			return minEval
 
 
 	minimax(currentPosition, 3, -∞, +∞, true) //initial call
