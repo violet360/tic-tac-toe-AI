@@ -70,8 +70,7 @@ function minimax(position, depth, alpha, beta, maximizingPlayer):
 		return minEval
 
 
-// initial call
-minimax(currentPosition, 3, -∞, +∞, true)
+	minimax(currentPosition, 3, -∞, +∞, true) //initial call
 
 
 so you can extrapolate this algo a basic AI for playing several games, othello? chess? connect4? tic-tac-toe? yourlife? you name it!
