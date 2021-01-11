@@ -1,6 +1,6 @@
 ## Min-Max-Algo:
 
-(if you are like "you dude wtf is wrong wid you, tic-tac-toe? seriously?" then know that I just wanted to create a cool program to learn min-max algo, so fuck you)
+(if you are like "you dude wtf is wrong wid you, tic-tac-toe? seriously?" then know that I just wanted to create a cool program to learn min-max algo, later I might create something cooler like othello or connect4 (fuck you if you thought chess))
 
 * While you play any game with perfect information every chance a player gets their are several moves the player can play, so consider chess, and you are white, imagine a number line the higher the value the more the favour is on white side and lesser, the black side gets favoured so every move white plays it tries to maximize its value and black tries to minimise inorder to favour its win
 
