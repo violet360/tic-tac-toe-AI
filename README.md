@@ -75,7 +75,7 @@ here's a pseudo code for minimax with alpha beta pruning
 	minimax(currentPosition, 3, -∞, +∞, true) //initial call
 
 
-so you can extrapolate this algo a basic AI for playing several games, othello? chess? connect4? tic-tac-toe? yourlife? you name it!
+so you can extrapolate this algo a basic AI for playing several games, othello? chess? connect4? tic-tac-toe? your life? you name it!
 BTW if you are thinking how practical this idea is then I will leave you with the trivia that, On May 11, 1997, an IBM computer called Deep Blue defeated world champion garry kasparov , and deep blue was basically mini-max + alpha-beta pruning + iterative deepening(some other advanced concept) + loads of parallel computing(ofc you need good hardware).
 
 useful sources:
