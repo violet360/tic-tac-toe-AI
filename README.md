@@ -42,7 +42,7 @@ here's a pseudo code for baxktracking:
 
 
 
-Now it's all fun and games until you get a game like chess, where the avg branching factor is 14 and the depth is around 120, so number of leaf nodes become 14^120 that's not possible to caculate by any existing system so alpha beta pruning helps here, it elimnates unnecessary tree branches off of search space(just like genocide)
+Now it's all fun and games until you get a game like chess, where the avg branching factor is 14 and the depth is around 120, so number of leaf nodes become 14^120 that's not possible to caculate by any existing system so alpha beta pruning helps here, it elimnates unnecessary tree branches off of search space
 
 here's a pseudo code for minimax with alpha beta pruning
 
